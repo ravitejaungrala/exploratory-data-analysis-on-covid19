@@ -72,17 +72,17 @@ if uploaded_file is not None:
     if st.checkbox("Show bar graph of total cases by country"):
         sns.barplot(data=data, x="date", y="total_cases")
         plt.xticks(rotation=90)
-        st.pyplot(data)
+        st.pyplot()
 
     # Create line plot
     if st.checkbox("Show line plot of new deaths over time"):
         sns.lineplot(data=data, x="date", y="new_deaths")
-        st.pyplot(data)
+        st.pyplot()
     # Create scatterplot
     if st.checkbox("Show scatterplot of total cases vs new deaths"):
         sns.scatterplot(data=data, x="total_cases", y="new_deaths")
         plt.xticks(rotation=90)
-        st.pyplot(data)
+        st.pyplot()
 
     # Create interactive heatmap
     
