@@ -7,7 +7,7 @@ import seaborn as sns
 import streamlit as st
 import random
 from PIL import Image
-logo = Image.open('logo.png')
+logo = Image.open('logo1.png')
 st.set_page_config(page_title="covid 19", page_icon=":bar_chart:", layout="wide")
 st.image(logo)
 # Define the list of names
